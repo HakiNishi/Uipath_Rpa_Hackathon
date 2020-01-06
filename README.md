@@ -10,6 +10,12 @@ Automate user requests made in the form of text. A NLP classifier will determine
 
 Proposed Solution
 
+    Method 1:
+    
+    WhatsApp Bot is created ,The user sends the text and context is found then orchestrator api is called to start the process.
+    
+    Method 2:
+    
     The user will send an email to a admin team regarding the meeting details. The body of the email is automatically fetched and subjected to NLP to find the context of the email body.
     Once the context is identified then the corressponding UiPath job is started.
     eg: If the user sends email to schedule a meeting, then automatically the schedule job is triggered which will schedule an event in google calendar and invites all the members through email.
@@ -20,3 +26,4 @@ Tech Stack
     AWS Lambda
     AWS S3
     Python (Data processing throgh API)
+    WhatsApp
